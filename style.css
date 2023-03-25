@@ -1,0 +1,55 @@
+body {
+    width: 100%;
+    height: 100%;
+    background-image: url(./IMG/1662174835_52-phonoteka-org-p-anime-oboi-v-chernom-stile-instagram-65.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black
+}
+
+.title {
+    position: absolute;
+    left: 350px;
+    top: 50px;
+    color: rgb(172, 111, 159);
+    font-size: 70px;
+}
+
+.buttons {
+    position: absolute;
+    left: 350px;
+    top: 250px;
+    padding: auto;
+}
+
+.buttons1 {
+    margin-bottom: 100px;
+}
+
+.buttons2 {
+    margin-bottom: 100px;
+}
+
+.buttons3 {
+    margin-bottom: 100px;
+}
+
+.buttons4 {
+    margin-bottom: 100px;
+}
+
+.buttons5 {
+    margin-bottom: 100px;
+}
+
+.buttons6 {
+    margin-bottom: 100px;
+}
+
+.buttons7 {
+    margin-bottom: 100px;
+}
+
+.buttons8 {
+    margin-bottom: 100px;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Рекурсия</title>
+</head>
+
+<body>
+    <h1 class="title">Дз по рекурсии</h1>
+    <main>
+        <div class="buttons">
+            <div class="buttons1">
+                <script>const sumTo1 = q => {
+                        let sum = 0;
+                        for (let i = 0; i <= q; i++) {
+                            sum += i
+                        }
+                        return sum
+                    }
+                    console.log('1, Вычислить сумму чисел до данного через цикл', sumTo1(111))
+                </script>
+                <form>
+                    <button type="button" onclick="alert(sumTo1(111))"><a>1 задание(1)</a></button>
+                </form>
+            </div>
+
+            <div class="buttons2">
+                <script>const sumTo2 = w => {
+                        return w === 1
+                            ? '1'
+                            : +w + +sumTo2(w - 1)
+                    }
+                    console.log('1, Вычислить сумму чисел до данногo через рекурсию', sumTo2(99))</script>
+                <form>
+                    <button type="button" onclick="alert(sumTo2(99))"><a>1 задание(2)</a></button>
+                </form>
+            </div>
+
+            <div class="buttons3">
+                <script>
+                    const sumTo3 = e => e * (e + 1) / 2;
+                    console.log('1, Вычислить сумму чисел до данногo через формулу', sumTo3(111))
+                </script>
+                <form>
+                    <button type="button" onclick="alert(sumTo3(101))"><a>1 задание(3)</a></button>
+                </form>
+            </div>
+
+            <div class="buttons4">
+                <script>
+                    const factorial = zxc =>
+                        zxc === 1
+                            ? 1
+                            : zxc * factorial(zxc - 1)
+                    console.log('2, Вычислить факториал', factorial(7))
+                </script>
+                <form>
+                    <button type="button" onclick="alert(factorial(7))"><a>2 задание</a></button>
+                </form>
+
+            </div>
+
+            <div class="buttons5">
+                <script>
+                    const fibonachi = stfu => {
+                        let z = 1;
+                        let x = 1;
+                        for (let i = 3; i <= stfu; i++) {
+                            let c = z + x; z = x; x = c;
+                        }
+                        return x
+                    }
+                    console.log('3, Числа Фибоначчи', fibonachi(7))
+                </script>
+                <form>
+                    <button type="button" onclick="alert(fibonachi(11))"><a>3 задание</a></button>
+                </form>
+            </div>
+
+            <div class="buttons6">
+                <script>
+                    let list = {
+                        value: 1,
+                        next: {
+                            value: 2,
+                            next: {
+                                value: 3,
+                                next: {
+                                    value: 4,
+                                    next: null
+                                }
+                            }
+                        }
+                    };
+
+                    const printList = list => {
+                        while (list) {
+                            console.log(list.value); list = list.next
+                        }
+                    }
+                    console.log('4, Вывод односвязного списка через слабоумие', printList(list))
+                </script>
+                <form>
+                    <button type="button" onclick="alert(printList(list))"><a>4 задание(1)</a></button>
+                </form>
+            </div>
+
+            <div class="buttons7">
+                <script>
+                    let list2 = {
+                        value: 1,
+                        next: {
+                            value: 2,
+                            next: {
+                                value: 3,
+                                next: {
+                                    value: 4,
+                                    next: null
+                                }
+                            }
+                        }
+                    };
+
+                    const printList2 = list2 => {
+                        console.log(list2.value)
+                        list2.next
+                            ? printList2(list2.next)
+                            : 1
+                    }
+                    console.log('4, Вывод односвязного списка через рекурсию', printList2(list2))
+                </script>
+                <form>
+                    <button type="button" onclick="alert(printList2(list2))"><a>4 задание(2)</a></button>
+                </form>
+            </div>
+
+            <div class="buttons8">
+                <script>
+                    let list3 = {
+                        value: 1,
+                        next: {
+                            value: 2,
+                            next: {
+                                value: 3,
+                                next: {
+                                    value: 4,
+                                    next: null
+                                }
+                            }
+                        }
+                    };
+
+                    const printListRev = list3 => {
+                        list3.next
+                            ? printListRev(list3.next)
+                            : 1;
+                        console.log(list3.value)
+                    }
+                    console.log('5, Вывод односвязного списка в обратном порядке через рекурсию', printListRev(list3))
+                </script>
+                <form>
+                    <button type="button" onclick="alert(printListRev(list3))"><a>5 задание</a></button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+
+</html>
